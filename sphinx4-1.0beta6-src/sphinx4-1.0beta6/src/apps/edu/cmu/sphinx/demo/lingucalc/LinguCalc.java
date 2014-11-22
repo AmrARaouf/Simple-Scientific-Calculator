@@ -133,7 +133,6 @@ public class LinguCalc {
 			throw new GrammarException(e.getMessage());
 		}
 		dumpSampleSentences(grammarName);
-		//recognizeAndReport();
 		/*
 		for (int i = 0; i < 20; i++) {
 			System.out.println("===================================================");
@@ -206,6 +205,8 @@ public class LinguCalc {
 		System.out.println("is:");
 		System.out.println(parser.parse(s));
 		System.out.println("===================================================");
+		
+		recognizeAndReport();
 	}
 
 	/**
@@ -216,12 +217,17 @@ public class LinguCalc {
 	 *             if an error in the JSGF grammar is encountered
 	 */
 	private void recognizeAndReport() throws GrammarException {
-		boolean done = false;
+		
+		System.out.println("*************************************************");
 
-		while (!done) {
+		while (true) {
 			Result result = recognizer.recognize();
 			String bestResult = result.getBestFinalResultNoFiller();
-			System.out.println("\n  " + bestResult + '\n');
+			System.out.println("The Result of:");
+			System.out.println(bestResult);
+			System.out.println("is:");
+			System.out.println(parser.parse(bestResult));
+			System.out.println("===================================================");
 		}
 	}
 
