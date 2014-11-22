@@ -6,10 +6,6 @@
 
 grammar lingucalc;
 
-import <commands.standard_commands>;
-
-public <commands> = <standard_commands> ;
-
 public <digit> = one | 
 		two |
 		three |
@@ -20,7 +16,8 @@ public <digit> = one |
 		eight |
 		nine;
 
-public <teens> = eleven |
+public <teens> = ten |
+		eleven |
 		twelve |
 		thirteen |
 		fourteen |
@@ -59,12 +56,16 @@ public <thousands> = <basic_thousands> |
 		<basic_thousands> and <tens> |
 		<basic_thousands> <hundreds>;
 
-public <number> = zero |
+public <number> = pi |
+		zero |
 		<digit> |
 		<teens> |
 		<tens> |
 		<hundreds> |
-		<thousands>;
+		<thousands> |
+		<digit> <digit> |
+		<digit> <digit> <digit> |
+		<digit> <digit> <digit> <digit>;
 
 public <expression> = <number> |
 		<number> plus <expression> |
@@ -77,4 +78,6 @@ public <expression> = <number> |
 		<number> cubed |
 		log base <number> of <expression>;
 		
-public <lingucalc> = <expression>;
+public <lingucalc> = <expression> |
+		store last result |
+		retrieve last result;

@@ -188,10 +188,10 @@
             </fileset>
         </copy>
 
-        <copy file="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc/jsgf.config.xml"
+        <copy file="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc/lingucalc.config.xml"
               todir="${demo_classes_dir}/edu/cmu/sphinx/demo/lingucalc"/>
         <jar destfile="${bin_dir}/LinguCalc.jar"
-             manifest="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc/jsgf.Manifest"
+             manifest="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc/lingucalc.Manifest"
              basedir="${demo_classes_dir}"
              includes="edu/cmu/sphinx/demo/lingucalc/**"
              compress="true"/>

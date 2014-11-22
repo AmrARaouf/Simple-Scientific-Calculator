@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/apps"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/javax.speech/src"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2.jse.sphinx4/src"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2.jse/src"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2.jse/unittests"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2/src"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2/unittests"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/research"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/sphinx4"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/test"/>
+	<classpathentry kind="src" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/tests/live"/>
+	<classpathentry kind="lib" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/lib/ant-contrib-0.6.jar"/>
+	<classpathentry kind="lib" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/lib/js.jar"/>
+	<classpathentry kind="lib" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/lib/junit-4.8.1.jar"/>
+	<classpathentry kind="lib" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2.jse.sphinx4/3rdparty/sphinx4/lib/sphinx4.jar"/>
+	<classpathentry kind="lib" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2.jse.sphinx4/3rdparty/sphinx4/lib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar"/>
+	<classpathentry kind="lib" path="sphinx4-1.0beta6-src/sphinx4-1.0beta6/src/jsapi2/org.jvoicexml.jsapi2.jse/3rdparty/rhino1.7R2/lib/js.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
