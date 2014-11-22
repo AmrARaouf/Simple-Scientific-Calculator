@@ -80,7 +80,8 @@
 		     compile_sphinx_hellongram,
 		     compile_sphinx_lattice,
 		     compile_sphinx_classbased,
-		     compile_sphinx_confidence,
+				 compile_sphinx_confidence,
+				 compile_lingucalc,
 		     compile_sphinx_raw,
 	             compile_jsapi_dialog,
 	             compile_jsapi_jsgf,
@@ -166,6 +167,33 @@
              manifest="${demo_src_dir}/edu/cmu/sphinx/demo/jsapi/jsgf/jsgf.Manifest"
              basedir="${demo_classes_dir}"
              includes="edu/cmu/sphinx/demo/jsapi/jsgf/**"
+             compress="true"/>
+		</target>
+
+		<target name="compile_lingucalc" if="jsapi_jar_present">
+        <mkdir dir="${demo_classes_dir}/edu/cmu/sphinx/demo/lingucalc"/>
+        <javac debug="true"
+               listfiles="true"
+               deprecation="true"
+               includeAntRuntime="false"
+               srcdir="${demo_src_dir}"
+               includes="edu/cmu/sphinx/demo/lingucalc/**"
+               destdir="${demo_classes_dir}">
+            <classpath refid="libs"/>
+        </javac>
+
+        <copy todir="${demo_classes_dir}/edu/cmu/sphinx/demo/lingucalc">
+            <fileset dir="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc">
+                <include name="**/*.gram"/>
+            </fileset>
+        </copy>
+
+        <copy file="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc/jsgf.config.xml"
+              todir="${demo_classes_dir}/edu/cmu/sphinx/demo/lingucalc"/>
+        <jar destfile="${bin_dir}/LinguCalc.jar"
+             manifest="${demo_src_dir}/edu/cmu/sphinx/demo/lingucalc/jsgf.Manifest"
+             basedir="${demo_classes_dir}"
+             includes="edu/cmu/sphinx/demo/lingucalc/**"
              compress="true"/>
     </target>
 

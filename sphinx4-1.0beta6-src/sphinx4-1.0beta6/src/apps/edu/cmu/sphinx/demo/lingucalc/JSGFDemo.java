@@ -10,7 +10,7 @@
  *
  */
 
-package edu.cmu.sphinx.demo.jsapi.jsgf;
+package edu.cmu.sphinx.demo.lingucalc;
 
 import edu.cmu.sphinx.jsgf.JSGFGrammar;
 import edu.cmu.sphinx.jsgf.JSGFGrammarException;
@@ -95,6 +95,7 @@ public class JSGFDemo {
         System.out.println(" Ready");
 
         if (microphone.startRecording()) {
+        	loadAndRecognize("lingucalc");
             loadAndRecognize("movies");
             loadAndRecognize("news");
             loadAndRecognize("books");
@@ -138,7 +139,7 @@ public class JSGFDemo {
      * Recognition for potentially multiple utterances until an 'exit'
      * tag is returned.
      *
-     * @htrows GrammarException if an error in the JSGF grammar is
+     * @throws GrammarException if an error in the JSGF grammar is
      * encountered
      */
     private void recognizeAndReport() throws GrammarException {
